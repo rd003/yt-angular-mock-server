@@ -62,6 +62,10 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "yt-angular-mock-server:build",
+            "proxyConfig": "proxy.conf.json"
+          },
           "configurations": {
             "production": {
               "browserTarget": "yt-angular-mock-server:build:production"
@@ -97,5 +101,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "3091c117-e026-4700-aea3-4222359a215d"
   }
 }
